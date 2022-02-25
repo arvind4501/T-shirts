@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>T-shirts</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+      <div class="container-fluid">
+        <a href="homepage.html"><img src="assets/images/logo.png"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="homepage.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Log-in</a>
+            </li>
+            <li class="nav-item">
+              <a href="cart.html"><img src="assets/images/cart.png" alt="" style="margin-top: -5px;"></a>
+            </li>   
+        </div>
+      </div>
+    </nav>
+    <section class="vh-100% bg-image">
+      <div class="mask d-flex align-items-center h-100% gradient-custom-3">
+        <div class="container h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+              <div class="card" style="border-radius: 15px; margin-top: 100px; margin-bottom: 100px;">
+                <div class="card-body p-5">
+                  <h2 class="text-uppercase text-center mb-5">Create an account</h2>
+                  <!--form content-->
+                  <form id="register-form">
+                    <div class="form-outline mb-4">
+                      <input type="text" id="name" required="required" class="form-control form-control-lg" placeholder="username" />
+                      <label class="form-label" for="name">Your Name</label>
+                    </div>
+                    <div class="form-outline mb-4">
+                      <input type="email" id="email" required="required" class="form-control form-control-lg" placeholder="you@gmail.com" />
+                      <label class="form-label" for="email">Your Email</label>
+                    </div>
+                    <div class="form-outline mb-4">
+                      <input type="password" id="pwd" required="required" class="form-control form-control-lg" placeholder="*********"/>
+                      <label class="form-label" for="password" >Password</label>
+                    </div>
+                    <div class="form-outline mb-4">
+                      <input type="password" id="confirmpwd" required="required" class="form-control form-control-lg" placeholder="*********" />
+                      <label class="form-label" for="password" >Confirm password</label>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                      <button type="submit" id="submit" value="submit" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body" name="submit" onclick="validate()">Register</button>
+                    </div>
+                    <p class="text-center text-muted mt-5 mb-0">Already have an account? <a href="login.html" class="fw-bold text-body"><u>Login here</u></a></p>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--footer-->
+    <section>
+    <div class="footer">
+      <div class="container">
+          <div class="row-footer">
+              <div class="footer-col-1">
+                  <h3>Download Our App</h3>
+                  <p>Download App for Android and ios mobile phone.</p>
+                  <div class="app-logo">
+                      <img src="assets/images/footer/playstore.png">
+                      <img src="assets/images/footer/app-store.png">
+                  </div>
+              </div>
+              <div class="footer-col-2">
+                  <img src="assets/images/footer/nike.jpg">
+                  <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.
+                  </p>
+              </div>
+              <div class="footer-col-3">
+                  <h3>Useful Links</h3>
+                  <ul>
+                      <li type="button">Coupons</li>
+                      <li type="button">Blog Post</li>
+                      <li type="button">Return Policy</li>
+                      <li type="button">Join Affiliate</li>
+                      <li type="button">contact us</li>
+                  </ul>
+              </div>
+              <div class="footer-col-4">
+                  <h3>Follow Us</h3>
+                  <ul>
+                      <li type="button">Facebook</li>
+                      <li type="button">Twitter</li>
+                      <li type="button">Instagram</li>
+                      <li type="button">Youtube</li>
+                      <li type="button"><i class="fab fa-facebook"></i>&#160 &#160<i class="fab fa-twitter">&#160 &#160</i><i class="fab fa-instagram">&#160 &#160</i><i class="fab fa-youtube"></i></li>
+                  </ul>
+              </div>
+          </div>
+          <hr>
+          <p class="copyright">Copyright 2021 - Arvind Jangir</p>
+      </div>
+  </div>
+</section>
+<script src="assets/Js/register.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>
